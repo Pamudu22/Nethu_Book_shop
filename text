@@ -1,0 +1,22 @@
+if (strlen($pass)<8){
+        
+        $_SESSION['msg'] = "Password must contain at least 8 characters.";
+        header("Location:sign-up.php");
+        exit(0);
+
+        if (! preg_match("/[a-z]/i",$pass)){
+       
+            $_SESSION['msg'] = "Password must contain at leadt one letter";
+            header("Location:sign-up.php");
+            exit(0);
+
+            if (! preg_match("/[0-9]/",$pass)){
+        
+                $_SESSION['msg'] = "Password must contain at leadt one number";
+                header("Location:sign-up.php");
+                exit(0);
+            }
+    
+}
+}
+

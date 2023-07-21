@@ -1,0 +1,358 @@
+.wlcm{
+	text-align: center;
+}
+/*ALL Type Content*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jacques Francois';
+    box-sizing: border-box;
+}
+/*Homepage*/
+.Homeback{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image:  url(Background.jpg);
+    opacity: 0.75;
+
+}
+.Bname{
+    font-family: 'Inria Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 48px;
+    
+
+    
+    color: #FFFFFF;
+
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Front{
+    color: white;
+    padding-left: 20px;
+    margin-top: 1%;
+    max-width: 620px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.Front form{
+    align-items: center;
+    background: white;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 25px;display: flex;
+    
+}
+.Front button{
+    color:rgb(255, 255, 255);
+    background-color: rgb(104, 64, 15);
+}
+.Front button:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(31, 21, 95);
+}
+.Front form input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px
+}
+.icon{
+    width: 30px;
+    height: auto;
+}
+/*Navigation Bar*/
+.Book_shop_logo{
+   
+    display:flex;
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 24px;
+    top: 15px;
+}
+nav div a img {
+    display:flex;
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 24px;
+    top: 15px;
+}
+.navbar{
+    background-color: rgba(1, 1, 19, 0.697)
+    
+}
+
+
+.nav-link{
+    transition: all 0.2s;
+    color: white !important;
+    position: relative;
+    font-size: 20px !important;
+    display: flex;
+}
+.nav-link:not(.active):hover::after{
+    opacity: 1;
+ 
+}
+.nav-link::after{
+    opacity: 0;
+    transition: all 0.2s;
+    content: '';
+    background-color: teal;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+}
+.BnamAdmin{
+    position: relative;
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100%;
+    
+
+    
+    color: #FFFFFF;
+
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*ADMIN PAGE*/
+.BnamAdmin{
+    position: relative;
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100%;
+    
+
+    
+    color: #FFFFFF;
+
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.adminbkback{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image:  url(Admin_inventory_bg.jpg);
+    opacity: 1;
+}
+.admintxt{
+    color: #FFFFFF;
+    display: flex;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+
+/*ADMIN SLIDE*/
+.contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 300px;
+    margin-right: 3%;
+  }
+  
+.add {
+    background-color: #4CAF50;
+} 
+.updt {
+    background-color: #008CBA;
+} 
+.del {
+    background-color: #e50909;
+} 
+.Search{
+    width:100px;
+    background-color: #1409e5;
+}
+
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  .slide{
+    background-color: #13618b9a;
+    border-radius: 8px;
+    text-align: left;
+    width:fit-content;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 2%;
+
+}
+.Ainput{
+    background-color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    padding: 5px;
+    width:20%;
+    border-radius: 6px;
+  }
+.Ainput{
+    transition: width 0.4s ease-in-out;
+  }
+.Ainput:focus {
+    width: 100%;
+  }
+
+.Aform{
+
+    background-color: white;
+}
+.iconA{
+    width: 25px;
+    height: 20px;
+}  
+select {
+    width: 80%;
+    height: auto;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+  }
+.inpttxt {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-style: none;
+    border-radius: 6px;
+    padding: 5px;
+    color: black;
+    
+  }
+  input[type=number] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 5px;
+   
+  }
+  input[type=date] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 5px;
+   
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+{
+	margin:0; padding:0;
+	margin:0; padding:0;
+	box-sizing: border-box;
+	outline:none; border:none;
+	text-decoration:none;
+	text-transform:capitalize;
+	transition: .2s; linear
+}
+.container{
+	padding:15px;
+	padding-bottom:100px;
+
+}
+.container .heading{
+	text-align: center;
+	padding-bottom: 15px;
+	color: #fff;
+	text-shadow:0 5px 10px rgba(0,0,0,.2);
+	font-size:50px;
+}
+.container .box-container{
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+	gap:15px;
+}
+.container .box-container .box {
+	box-shadow:0 5px 10px rgba(0,0,0,.2);
+	border-radius: 5px;
+	background: #fff;
+	text-align: left;
+	padding: 20px 10px;
+
+}
+.container .box-container .box img{
+	height: 250px;
+}
+.container .box-container .box h3{
+	 color: #d2cbcb;
+	 font-style: 22px;
+	 padding: 10px 0;
+}
+.container .box-container .box .btn {
+	margin-top: 10px;
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	font-size: 17px;
+	border-radius: 5px;
+	padding: 8px 25px;
+
+}
+.container .box-container .box .btn:hover{
+	letter-spacing: 1px;
+}
+.container .box-container .box::hover{
+	box-shadow:0 10px 15px rgba(0,0,0,.3);
+	transform: scale(1.03);
+}
+@media (max-width:768px) {
+	.container{
+		padding:20px;
+	}
+}
